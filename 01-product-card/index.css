@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    margin: 40px auto 0;
+    max-width: 1180px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 72px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.products-card{
+    height: 482px;
+    max-width: 380px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+    position: relative;
+}
+
+.products-card__image img{
+    border-radius: 12px 12px 0px 0px;
+}
+
+.products-card__name {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 16px;
+}
+
+.products-card__description{
+    line-height: 24px;
+}
+
+.products-card__button{
+    height: 48px;
+    border: 2px solid #42940F;
+    border-radius: 8px;
+    width: 332px;
+    background-color: transparent;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    color: #42940F;
+    position: absolute;
+    bottom: 0px
+}
+
+.products-card__button:hover{
+    background: #42940F;
+    color: #FFFFFF;
+    cursor:pointer;
+    transition: 0.5s;
+}
+
+.products-card__button:active{
+    background: #1F5200;
+    color: #FFFFFF;
+    cursor:pointer;
+}
+
+.products-card__button:disabled{
+    background: #4E4E4E;
+    color: #FFFFFF;
+    border: none;
+    border: 2px solid #4E4E4E;
+    cursor: default;
+}
+
+.products-card__tags{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 263px;
+}
+
+.products-card__tag-new{
+    width: 111px;
+    background: #FDCFF3;
+}
+
+.products-card__tag-last{
+    width: 136px;
+    background: #FFCF56;
+}
+
+.products-card__tag{
+    height: 25px;
+    line-height: 27px;
+    color: #2F2F2F;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+
+.producnts-card__info{
+    height: 220px;
+    position:absolute;
+    left: 24px;
+    right: 24px;
+    top: 238px;
+}
+
+@media (max-width: 1200px) {
+    .wrapper{
+        justify-content: flex-start;
+        width: 800px;
+        margin: auto;
+    }
+
+    .products-card{
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .wrapper{
+        width: 380px;
+        flex-direction: column;
+    }
+}
